@@ -1,1 +1,1 @@
-Git repository of a menu-driven website. Started off as a cps tester
+CPS tester. My first major website project
