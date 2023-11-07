@@ -26,8 +26,8 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            margin-left: -40px;
-            margin-top: 100px;
+            margin-left: 53px;
+            margin-top: -140px;
             color: white;
             border: rgb(70, 70, 70) solid 2px;
             border-radius: 5px;
@@ -39,13 +39,42 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            margin-left: -40px;
+            margin-left: -122px;
+            margin-top: -140px;
+            color: white;
+            border: rgb(70, 70, 70) solid 2px;
+            border-radius: 5px;
+            background-color: rgb(70, 70, 70);
+            padding: 5px;
+        }
+
+        .clicks {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -42px;
+            margin-top: -140px;
+            color: white;
+            border: rgb(70, 70, 70) solid 2px;
+            border-radius: 5px;
+            background-color: rgb(70, 70, 70);
+            padding: 5px;
+        }
+
+        .timeInput {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -67px;
             margin-top: -200px;
             color: white;
             border: rgb(70, 70, 70) solid 2px;
             border-radius: 5px;
             background-color: rgb(70, 70, 70);
             padding: 5px;
+            font-size: 20px;
+            width: 130px;
+            text-align: center;
         }
 
         body {
@@ -57,14 +86,20 @@
         }
 
 
-
     </style>
 
     <body>
 
         <p class = "TimeLeft" id = "timeLeft" style = "font-size: 20px;">5.0 sec</p>
+<<<<<<< HEAD
         <button class = "mainClickButton" type = "menu" onclick = beppam()>Click</button>
         <p class = "Result" id = "result" style = "font-size: large;">0.00 cps</p>
+=======
+        <p class = "Clicks" id = "clicks" style = "font-size: 20px;">00 clicks</p>
+        <button class = "mainClickButton" type = "menu" onclick = veryMain()>Click</button>
+        <p class = "Result" id = "result" style = "font-size: 20px;">0.00 cps</p>
+        <input class = "TimeInput" type = "number" id = "timeInput" name = "timeInput" placeholder = "Time (ms)", onblur = inputLostFocus()>
+>>>>>>> b6004f4 (Committed)
 
     </body>
 
