@@ -54,7 +54,6 @@ function veryMain() {
 
     clickerMain();
     onButtonClick();
-<<<<<<< HEAD
 
     if (time >= 5) {
         var result = (x/time).toFixed(1)
@@ -64,9 +63,5 @@ function veryMain() {
         time = 0;
     }
 
-    document.getElementById("mainClickButton").background-color = rgb(50, 50, 50)
-
-=======
->>>>>>> b6004f4 (Committed)
 }
 
