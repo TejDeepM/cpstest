@@ -55,7 +55,7 @@ function veryMain() {
     clickerMain();
     onButtonClick();
 
-    if (time >= 5) {
+    if (time >= maxTime/1000) {
         var result = (x/time).toFixed(1)
         alert(result);
         document.getElementById("result").innerHTML = result + " cps";
