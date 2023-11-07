@@ -44,5 +44,7 @@ function beppam() {
         time = 0;
     }
 
+    document.getElementById("mainClickButton").background-color = rgb(50, 50, 50)
+
 }
 
