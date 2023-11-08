@@ -1,1 +1,1 @@
-Test your clicking speed using the website. My first hosted website.
+Test your clicking speed. My first hosted website.
