@@ -1,1 +1,1 @@
-Git repository of a menu-driven website. Started off as a cps tester
+Test your clicking speed using the website. My first hosted website.
