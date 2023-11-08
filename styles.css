@@ -1,0 +1,77 @@
+
+.mainClickButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px;
+    margin-top: -75px;
+    height: 150px;
+    width: 250px;
+    font-size: 40px;
+    border: gray -5px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.Result {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 53px;
+    margin-top: -140px;
+    color: white;
+    border: rgb(70, 70, 70) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+}
+
+.TimeLeft {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -122px;
+    margin-top: -140px;
+    color: white;
+    border: rgb(70, 70, 70) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+}
+
+.clicks {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -42px;
+    margin-top: -140px;
+    color: white;
+    border: rgb(70, 70, 70) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+}
+
+.timeInput {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -67px;
+    margin-top: -200px;
+    color: white;
+    border: rgb(70, 70, 70) solid 2px;
+    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+    font-size: 20px;
+    width: 130px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.mainClickButton:hover {
+    background-color: rgb(213, 211, 211);
+}
