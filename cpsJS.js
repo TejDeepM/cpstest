@@ -2,6 +2,7 @@
 var x = 0;
 var time = 0;
 var maxTime = 5000;
+var result = 0;
 
 function inputLostFocus() {
     maxTime = document.getElementById("timeInput").value;
@@ -14,21 +15,22 @@ function veryMain() {
         if (x == 0) {
 
             function increaseTimer() {
-                time += 0.1;
-                document.getElementById("timeLeft").innerHTML = (maxTime/1000 - time).toFixed(1).toString() + " sec"
+                time += 10;
+                document.getElementById("timeLeft").innerHTML = ((maxTime - time)/1000).toFixed(1).toString() + " sec"
             
-                if (time < maxTime/1000) {
-                    setTimeout(increaseTimer, 100);
+                if (time < maxTime) {
+                    setTimeout(increaseTimer, 10);
                 }
 
-                else if (time > maxTime/1000) {
+                else if (time >= maxTime) {
                     time = maxTime;
-                    document.getElementById("timeLeft").innerHTML = "0.0 sec"
+                    result = (x/(maxTime/1000)).toFixed(1);
+                    
+                    document.getElementById("timeLeft").innerHTML = "0.0 sec";
+                    document.getElementById("result").innerHTML = result + " cps";
 
-                    var result = (x/(maxTime/1000)).toFixed(1)
                     alert(result);
 
-                    document.getElementById("result").innerHTML = result + " cps";
 
                     x = 0;
                     time = 0;
@@ -36,9 +38,8 @@ function veryMain() {
             }
             
             increaseTimer();
-            setTimeout(clickerMain, 1000)
         
-        }
+        } //runs only once
         
     }
 
@@ -54,14 +55,6 @@ function veryMain() {
 
     clickerMain();
     onButtonClick();
-
-    if (time >= maxTime/1000) {
-        var result = (x/time).toFixed(1)
-        alert(result);
-        document.getElementById("result").innerHTML = result + " cps";
-        x = 0;
-        time = 0;
-    }
 
 }
 
