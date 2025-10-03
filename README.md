@@ -1,1 +1,1 @@
-Test your typing speed.
+Test your click speed.
